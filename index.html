@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Box Styling</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>CSS Snippet Cheatsheet</h1>
+        <p>Use these CSS snippets in your own code!</p>
+
+    </header>
+
+    <section id="mainGrid">
+        <section id="flexRow" class="mainGridArea">
+            <h2>Flexbox Row</h2>
+            <article class="description">
+                <p>Use these three properties to make a Flexbox row layout.</p>
+            </article>
+            <section class="codeSnippet-top">
+                <p>.row{ <br> &ensp; display: flex; <br>  &ensp; flex-direction: row; <br>  &ensp; flex-wrap: wrap; <br> }</p>
+            </section>
+        </section>
+
+
+        <section id="flexCol" class="mainGridArea">
+            <h2>Flexbox Column</h2>
+            <article class="description">
+                <p>Use this to make a Flexbox column layout.</p>
+            </article>
+            <section class="codeSnippet-top">
+                <p>.column{ <br> &ensp; display: flex; <br>  &ensp; flex-direction: column; <br> }</p>
+            </section>
+        </section>
+
+
+        <section id="cssGrid" class="mainGridArea">
+            <h2>CSS Grid Layout</h2>
+            <article class="description">
+                <p>Build a 12 column layout using a CSS grid.</p>
+            </article>
+            <section class="codeSnippet-top">
+                <p>.grid{ <br> &ensp; display: grid; <br>  &ensp; width: 100%; <br> &ensp; grid-template-columns: <br> repeat(12, 1fr); <br> }</p>
+            </section>
+        </section>
+
+
+        <section id="linGrad" class="mainGridArea">
+            <h2>Linear Gradients</h2>
+            <article class="description">
+                <p>This will make a background linear gradient from top to bottom.</p>
+            </article>
+        </section>
+
+        <section id="boxTransgGlow" class="mainGridArea">
+            <h2>Box Transition Glow</h2>
+            <article class="description">
+                <p>Use transition and box shadows to glow on hover.</p>
+            </article>
+        </section>
+
+        <section id="overlayCard" class="mainGridArea">
+            <h2>Overlay Card with Title</h2>
+            <article class="description">
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            </article>
+        </section>
+    </section>
+
+    <footer>
+        <h3>Made with ❤️ and CSS</h3>
+    </footer>
+
+</body>

@@ -1,0 +1,110 @@
+*{
+    background-color: rgb(57, 68, 68);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3{
+    color: rgb(192, 83, 219);
+    text-align: center;
+}
+
+h1, h2{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: #ffff;
+    text-align: center;
+}
+
+
+
+#mainGrid{
+    background-color:  rgb(57, 68, 68);
+    height: auto;
+    margin: 0px 5%;
+    margin-top: 60px;
+    display: grid;
+    grid-gap: 40px;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "flexrow flexcol cssgrid"
+                         "lingrad boxtransglow overlaycard"
+                         ;
+}
+
+#flexRow{
+    grid-area: flexrow;
+}
+
+#flexCol{
+    grid-area: flexcol;
+}
+
+#cssGrid{
+    grid-area: cssgrid;
+}
+
+#linGrad{
+    grid-area: lingrad;
+}
+
+#boxTransgGlow{
+    grid-area: boxtransglow;
+}
+
+#overlayCard{
+    grid-area: overlaycard;
+}
+
+.mainGridArea{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content:center ;
+    align-items: flex-start;
+    border: dashed 2px rgb(255, 255, 255);
+
+}
+
+.mainGridArea h2{
+    position: relative;
+    margin-top: -20px;
+    border: solid 2px rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.description{
+    margin-top: 0px;
+    position: absolute;
+    top: 35px;
+}
+
+.description p{
+    color: rgb(192, 83, 219);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.codeSnippet-top{
+    position: absolute;
+    top: 80px;
+
+}
+
+.codeSnippet-top p{
+    text-align: left;
+    background-image: linear-gradient(
+        rgba(232,102,236,0.3)0%,
+        rgba(232,102,236,0.6)100%);
+    padding:7px;
+    width: 400px;
+    height: 130px;
+    border-radius: 3%;
+}
